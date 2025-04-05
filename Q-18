@@ -1,0 +1,8 @@
+L = 10 
+B = 5  
+
+area = L * B
+perimeter = 2 * (L + B)
+
+print(f"Area of the rectangle is {area}")
+print(f"Perimeter of the rectangle is {perimeter}")
