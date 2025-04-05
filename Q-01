@@ -1,0 +1,10 @@
+people = [("John", "Mike"), "Emma", ("Alex",), "Sophia", ("James", "Leo"), "Olivia"]
+boys = girls = 0
+for p in people:
+    if isinstance(p, tuple):
+        boys += len(p)
+    else:
+        girls += 1
+print("Number of boys:", boys)
+print("Number of girls:", girls)
+
