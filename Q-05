@@ -1,0 +1,5 @@
+def ispangram(sentence):
+    import string
+    return set(string.ascii_lowercase) <= set(sentence.lower())
+
+print(ispangram("The quick brown fox jumps over the lazy dog"))
