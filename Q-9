@@ -1,0 +1,3 @@
+inr = 4800 
+usd = inr /48 
+print(f"₹{inr} is equal to ${usd}")
