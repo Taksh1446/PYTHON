@@ -1,4 +1,3 @@
-import random
 str_list = ["hello", "world", "python", "list", "example"]
 upper_list = [s.upper() for s in str_list]
 print("Uppercase strings:", upper_list)
