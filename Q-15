@@ -1,0 +1,7 @@
+def reverse_list(lst):
+    if len(lst) <= 1:
+        return lst
+    return [lst[-1]] + reverse_list(lst[:-1])
+
+lst = [int(x) for x in input("Enter list elements separated by space: ").split()]
+print("Reversed list:", reverse_list(lst))
