@@ -1,0 +1,7 @@
+def remove_substring(main_str, sub_str):
+    index = main_str.find(sub_str)
+    if index != -1:
+        final_str = main_str[:index] + main_str[index + len(sub_str):]
+        print("Resulting string:", final_str)
+    else:
+        print("Substring not found in main string")
