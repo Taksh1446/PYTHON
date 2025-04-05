@@ -1,0 +1,9 @@
+def avg(lst, index=0):
+    if index == len(lst):
+        return (0, 0)  # sum, count
+    total, count = avg(lst, index + 1)
+    return (total + lst[index], count + 1)
+
+lst = [int(x) for x in input("Enter numbers: ").split()]
+total, count = avg(lst)
+print(f"Average: {total / count if count else 0}")
