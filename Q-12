@@ -1,0 +1,10 @@
+import math
+
+def point_circle_relation(xc, yc, r, x, y):
+    distance = math.sqrt((x - xc)**2 + (y - yc)**2)
+    if distance < r:
+        print("Point is inside the circle")
+    elif distance == r:
+        print("Point is on the circle")
+    else:
+        print("Point is outside the circle")
