@@ -1,0 +1,8 @@
+import random
+num_set = {random.randint(15, 45) for _ in range(10)}
+print("Original set:", num_set)
+count_less_30 = len([n for n in num_set if n < 30])
+print("Count of numbers < 30:", count_less_30)
+num_set = {n for n in num_set if n <= 35}
+print("Set after removing numbers > 35:", num_set)
+
