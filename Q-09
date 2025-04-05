@@ -1,0 +1,6 @@
+def count_alpha_digits(s):
+    alpha = sum(1 for c in s if c.isalpha())
+    digit = sum(1 for c in s if c.isdigit())
+    return {"alphabets": alpha, "digits": digit}
+
+print(count_alpha_digits("abc1234xyz"))
