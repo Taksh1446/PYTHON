@@ -1,0 +1,10 @@
+bytes_value = 1073741824  
+
+kb = bytes_value / 1024
+mb = bytes_value / (1024 ** 2)
+gb = bytes_value / (1024 ** 3)
+
+print(f"{bytes_value} bytes is equal to:")
+print(f"{kb} KB")
+print(f"{mb} MB")
+print(f"{gb} GB")
