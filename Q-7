@@ -1,0 +1,3 @@
+min=360
+h=min/60
+print("hours = ", h)
