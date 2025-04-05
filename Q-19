@@ -1,0 +1,5 @@
+R = 7  
+
+area = (22 / 7) * R * R
+
+print(f"Area of the circle with radius {R} is {area}")
