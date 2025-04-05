@@ -1,0 +1,5 @@
+def convert(s):
+    words = set(s.split())
+    return ' '.join(sorted(words))
+
+print(convert("apple banana apple orange banana"))
