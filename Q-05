@@ -1,0 +1,7 @@
+def pythagorean_triplets(limit):
+    for a in range(1, limit + 1):
+        for b in range(a, limit + 1):
+            c = a*a + b*b
+            for i in range(1, limit + 1):
+                if i*i == c:
+                    print(a, b, i)
