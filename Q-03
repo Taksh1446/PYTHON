@@ -1,0 +1,5 @@
+def check_substring(s1, s2):
+    if s2 in s1:
+        print(f"'{s2}' is in '{s1}'")
+    else:
+        print(f"'{s2}' is not in '{s1}'")
