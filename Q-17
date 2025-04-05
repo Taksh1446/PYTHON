@@ -1,0 +1,9 @@
+def sanitize_list(lst, index=0):
+    if index >= len(lst):
+        return lst
+    if lst[index] < 0:
+        lst[index] = 0
+    return sanitize_list(lst, index + 1)
+
+lst = [int(x) for x in input("Enter list with negatives: ").split()]
+print("Sanitized list:", sanitize_list(lst))
