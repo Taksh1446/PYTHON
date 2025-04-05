@@ -1,0 +1,10 @@
+employees = {
+    10: [(101, 30000), (102, 40000)],
+    20: [(201, 25000), (202, 60000)],
+    30: [(301, 35000), (302, 50000)]
+}
+for dept, data in employees.items():
+    salaries = [sal for _, sal in data]
+    print(f"Dept {dept} - Min Salary: {min(salaries)}, Max Salary: {max(salaries)}")
+
+
