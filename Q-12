@@ -1,0 +1,5 @@
+
+kg = 5  
+grams = kg * 1000
+
+print(f"{kg} kilograms is equal to {grams} grams")
