@@ -1,0 +1,19 @@
+name_set = set()
+for i in range(5):
+    name_set.add(input(f"Enter name {i+1}: "))
+print("Initial set:", name_set)
+
+# Modify (remove one, add new)
+name_to_modify = input("Enter name to modify: ")
+if name_to_modify in name_set:
+    name_set.remove(name_to_modify)
+    new_name = input("Enter new name: ")
+    name_set.add(new_name)
+
+# Delete two names
+for _ in range(2):
+    name_to_delete = input("Enter name to delete: ")
+    name_set.discard(name_to_delete)
+
+print("Final set:", name_set)
+
