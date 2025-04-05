@@ -1,0 +1,5 @@
+name = input("Enter name: ")
+phone = input("Enter phone: ")
+email = input("Enter email: ")
+with open("contact.vcf", "w") as file:
+    file.write(f"BEGIN:VCARD\nVERSION:3.0\nFN:{name}\nTEL:{phone}\nEMAIL:{email}\nEND:VCARD")
