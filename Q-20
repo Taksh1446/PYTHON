@@ -1,0 +1,6 @@
+H = 10 
+L = 8  
+
+area = (H * L) / 2
+
+print(f"Area of the triangle is {area}")
