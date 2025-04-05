@@ -1,0 +1,6 @@
+import random
+and_nums = [random.randint(1, 10) for _ in range(20)]
+print("Generated list:", rand_nums)
+num = int(input("Enter number to search: "))
+pos = [i for i, val in enumerate(rand_nums) if val == num]
+print("Positions:", pos)
