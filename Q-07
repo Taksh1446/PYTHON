@@ -1,0 +1,7 @@
+import pickle
+employee = {"empcode": 101, "empname": "Alice", "doj": "2020-01-01", "salary": 50000}
+with open("employee.dat", "wb") as f:
+    pickle.dump(employee, f)
+with open("employee.dat", "rb") as f:
+    data = pickle.load(f)
+    print(data)
