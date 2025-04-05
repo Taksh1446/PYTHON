@@ -1,0 +1,7 @@
+L = 6  
+
+area = L ** 2
+perimeter = 4 * L
+
+print(f"Area of the square is {area}")
+print(f"Perimeter of the square is {perimeter}")
