@@ -8,3 +8,55 @@ def check_number(n):
             if n % i == 0:
                 is_prime = False
                 break
+
+    # Perfect
+    sum_divisors = 0
+    for i in range(1, n):
+        if n % i == 0:
+            sum_divisors += i
+    is_perfect = (sum_divisors == n)
+
+    # Armstrong
+    temp = n
+    num_digits = 0
+    while temp > 0:
+        num_digits += 1
+        temp //= 10
+
+    temp = n
+    armstrong_sum = 0
+    while temp > 0:
+        digit = temp % 10
+        power = 1
+        for _ in range(num_digits):
+            power *= digit
+        armstrong_sum += power
+        temp //= 10
+    is_armstrong = (armstrong_sum == n)
+
+    # Palindrome
+    original = n
+    reverse = 0
+    while n > 0:
+        digit = n % 10
+        reverse = reverse * 10 + digit
+        n //= 10
+    is_palindrome = (original == reverse)
+
+    # Automorphic
+    square = original * original
+    temp = original
+    match = True
+    while temp > 0:
+        if temp % 10 != square % 10:
+            match = False
+            break
+        temp //= 10
+        square //= 10
+    is_automorphic = match
+
+    print("Prime:", is_prime)
+    print("Perfect:", is_perfect)
+    print("Armstrong:", is_armstrong)
+    print("Palindrome:", is_palindrome)
+    print("Automorphic:", is_automorphic)
