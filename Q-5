@@ -1,0 +1,6 @@
+a=2
+b=3
+print("add. of two values ",a+b)
+print("sub. of two values ",a-b)
+print("mul. of two values ",a*b)
+print("div. of two values ",a/b)
