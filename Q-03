@@ -1,0 +1,8 @@
+def count_alpha_digits(s):
+    alpha = digit = 0
+    for ch in s:
+        if ('a' <= ch <= 'z') or ('A' <= ch <= 'Z'):
+            alpha += 1
+        elif '0' <= ch <= '9':
+            digit += 1
+    print("Alphabets:", alpha, "Digits:", digit)
