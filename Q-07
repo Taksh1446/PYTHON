@@ -1,0 +1,11 @@
+def factorial(n):
+    fact = 1
+    for i in range(2, n + 1):
+        fact *= i
+    return fact
+
+def nCr(n, r):
+    print("nCr =", factorial(n) // (factorial(r) * factorial(n - r)))
+
+def nPr(n, r):
+    print("nPr =", factorial(n) // factorial(n - r))
