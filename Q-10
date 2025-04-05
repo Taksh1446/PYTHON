@@ -1,0 +1,5 @@
+usd = 100 
+inr = usd * 48
+pounds = inr / 70
+
+print(f"${usd} is equal to £{pounds}")
