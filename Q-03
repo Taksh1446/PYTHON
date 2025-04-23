@@ -1,0 +1,17 @@
+import math
+
+class Solid:
+    def __init__(self, radius, height):
+        self.radius = radius
+        self.height = height
+
+    def surface_area(self):
+        return 2 * math.pi * self.radius * (self.radius + self.height)
+
+    def volume(self):
+        return math.pi * self.radius ** 2 * self.height
+
+# Example usage
+cylinder = Solid(3, 5)
+print("Surface Area:", cylinder.surface_area())
+print("Volume:", cylinder.volume())
