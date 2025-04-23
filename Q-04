@@ -1,0 +1,18 @@
+import math
+
+class Shape:
+    def __init__(self, side_length, sides):
+        self.side_length = side_length
+        self.sides = sides
+
+    def perimeter(self):
+        return self.side_length * self.sides
+
+    def area(self):
+        angle = math.pi / self.sides
+        return (self.sides * self.side_length**2) / (4 * math.tan(angle))
+
+# Example usage
+hexagon = Shape(6, 6)
+print("Perimeter:", hexagon.perimeter())
+print("Area:", hexagon.area())
